@@ -83,7 +83,7 @@ dat |>
 Which state has the largest number of PM2.5 monitors in their state?
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
@@ -91,7 +91,7 @@ Which state has the largest number of PM2.5 monitors in their state?
 Take the average of the PM2.5 values within each state. Which state in the U.S. has the highest average PM2.5 levels? Which state has the lowest average PM2.5 levels? 
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
@@ -107,7 +107,7 @@ We can build a prediction model for PM2.5 using the variables that we have in th
 Create two data frames: One called `train_dat` and another called `test_dat`. Use the `filter()` function on the `dat` data frame in order to create these new data frames. 
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 
@@ -116,7 +116,7 @@ Fit a regression model using `value` as the outcome and the remaining variables 
 Use the `summary()` function on the `fit` object and check the residual standard error and the R-squared values. How well does the model perform on the training dataset?
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
@@ -124,7 +124,7 @@ Use the `summary()` function on the `fit` object and check the residual standard
 Use your test dataset `test_dat` and the `predict()` function to make predictions using the test data. Compare your predicted values with the observed monitor values by calculating the root mean-squared error (RMSE). How does the RMSE compare to what you expected to see?
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
@@ -137,14 +137,14 @@ Use your test dataset `test_dat` and the `predict()` function to make prediction
 Create a new variable called `violation` using the `mutate()` function. The new variable is 1 if the location has a value of PM2.5 (in the `value` column) that is in violation of the national standards and is 0 if that location is not in violation. Call the new data frame `datv`. You can use the `ifelse()` function for this. Save the modified data frame as an object named `datv`.
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 
 ```
 
 Across all the locations in the dataset, what is the average level of PM2.5?
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
@@ -153,7 +153,7 @@ Across all the locations in the dataset, what is the average level of PM2.5?
 Using your newly created `violation` variable, what percentage of all of the locations in the dataset are in violation of the national PM2.5 standards? 
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 
 ```
 
@@ -168,7 +168,7 @@ We can build a classification model to predict whether a given location is in vi
 Look at the coefficient for `pov` (percent of ZIP code living in poverty) in the model. Does `pov` have a positive or negative relationship with being in violation of the national standards? 
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
@@ -180,7 +180,7 @@ We can see how well our logistic regression model predicts whether a monitoring 
 
 
 ```{r}
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 Now plot the ROC curve and compute the area under the curve (AUC) for the model. How well does the model perform?
@@ -189,7 +189,7 @@ Now plot the ROC curve and compute the area under the curve (AUC) for the model.
 ```{r}
 library(plotROC)
 
-## Your code goes below
+## Your code goes below (make sure to edit this comment)
 ```
 
 **Your answer goes here. Write sentences in bold.**
